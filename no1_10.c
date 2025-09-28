@@ -3,24 +3,13 @@
 // ‘X’ (x besar).
 
 #include <stdio.h>
+int main(){
+    char karakter;
 
-int main() {
-    char ch;
-
-    printf("Ketikkan karakter (akhiri dengan 'X'):\n");
-
-    // baca 1 karakter dulu
-    scanf(" %c", &ch);
-
-    // selama karakter bukan 'X'
-    while (ch != 'X') {
-        printf("Anda mengetik: %c\n", ch);
-
-        // baca karakter berikutnya
-        scanf(" %c", &ch);
+    while(karakter != 'X'){
+        printf("Masukkan karakter (tekan 'X' untuk keluar): ");
+        fflush(stdin);
+        scanf(" %c", &karakter);
     }
-
-    printf("Program berhenti karena Anda mengetik 'X'.\n");
-
     return 0;
 }
